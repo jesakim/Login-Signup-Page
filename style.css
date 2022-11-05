@@ -36,3 +36,6 @@ a{
 a:hover{
     color: #3A5A40;
 }
+#icon2{
+    display: none;
+}

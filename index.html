@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Sign In Page</title>
+    <link rel="icon" href="img/icon.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     
@@ -75,8 +76,14 @@
       </div>
 
       <!-- Password input -->
-      <div class="form-outline mb-4 form-white">
-        <input type="password" id="loginPassword" class="form-control" />
+      <div class="form-outline mb-4 form-white position-relative">
+        <input type="password" id="loginPassword" class="form-control rounded-pill"/>
+        <span class="input-group-append position-absolute top-0 end-0" id="icon1">
+            <i class="fa-regular fa-eye text-white p-2" onclick="displayPassword()"></i>
+        </span>
+        <span class="input-group-append position-absolute top-0 end-0" id="icon2">
+            <i class="fa-regular fa-eye-slash text-white p-2" onclick="hidePassword()"></i>
+        </span>
         <label class="form-label" for="loginPassword">Password</label>
       </div>
 
@@ -179,6 +186,17 @@
     <!-- MDB -->
     <script type="text/javascript" src="mdb.min.js"></script>
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      function displayPassword(){
+        document.getElementById("icon1").style.display = "none"
+        document.getElementById("icon2").style.display = "block"
+        document.getElementById("loginPassword").removeAttribute("type");
+      }
+      function hidePassword(){
+        document.getElementById("icon2").style.display = "none"
+        document.getElementById("icon1").style.display = "block"
+        document.getElementById("loginPassword").setAttribute("type", "password");
+      }
+    </script>
   </body>
 </html>
