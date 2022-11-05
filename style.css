@@ -1,0 +1,38 @@
+body{
+    background-image: url("img/bg.jpg");
+    height:100vh;
+    background-size: cover;
+    color: aliceblue;
+  }
+.container{
+    width: 50%;
+   }
+@media only screen and (max-width: 800px) {
+   .container{
+    width: 100%;
+   }
+}
+#button{
+    background-color: #D6FFB7 ;
+    color: #3A5A40;
+    box-shadow: none ;
+}
+#button:hover{
+    background-color: #3A5A40 ;
+    color: #D6FFB7;
+}
+#checkbox{
+    background-color: #D6FFB7;
+}
+#checkbox:checked{
+    background-color: #3A5A40;
+    border: solid #3A5A40 1px;
+}
+
+a{
+    text-decoration: none;
+    color: #D6FFB7;
+}
+a:hover{
+    color: #3A5A40;
+}
