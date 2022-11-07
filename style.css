@@ -43,6 +43,8 @@ body{
     border: #D6FFB7 solid 2px;
     outline: none;
     color: #D6FFB7;
+    padding: 10px;
+    padding-left: 30px;
 }
 .form-outline{
     position: relative;
@@ -55,6 +57,7 @@ body{
     transition: 0.5s;
     opacity: 0.7;
     cursor: text;
+    pointer-events:none;
 }
 .form-outline input:valid ~ label,
 .form-outline input:focus ~ label{

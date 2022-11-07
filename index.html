@@ -19,11 +19,11 @@
         </ul>
       <form action="" id="formbody" class="mb-2">
         <div class="form-outline mb-4">
-            <input type="text" id="loginName" class="rounded-pill w-100 p-2" required oninvalid="setCustomValidity('Please Entre Email');this.style.border = 'red solid 2px';this.nextElementSibling.style.color = 'red'" oninput="setCustomValidity('');this.style.border = '#D6FFB7 solid 2px';this.nextElementSibling.style.color = '#3A5A40'"/>
+            <input type="text" id="loginName" class="rounded-pill w-100" required oninvalid="setCustomValidity('Please Entre Email');this.style.border = 'red solid 2px';this.nextElementSibling.style.color = 'red'" oninput="setCustomValidity('');this.style.border = '#D6FFB7 solid 2px';this.nextElementSibling.style.color = '#3A5A40'"/>
             <label class="form-label" for="loginName" id="NameLabel">Email</label>
         </div>
         <div class="form-outline">
-            <input type="password" id="loginPassword" class="rounded-pill w-100 p-2" required onkeyup="counter()" oninvalid="setCustomValidity('Please Entre Password');this.style.border = 'red solid 2px';this.nextElementSibling.style.color = 'red'" oninput="setCustomValidity('');this.style.border = '#D6FFB7 solid 2px';this.nextElementSibling.style.color = '#3A5A40'"/>
+            <input type="password" id="loginPassword" class="rounded-pill w-100" required onkeydown="counter()" onkeyup="counter()" oninvalid="setCustomValidity('Please Entre Password');this.style.border = 'red solid 2px';this.nextElementSibling.style.color = 'red'" oninput="setCustomValidity('');this.style.border = '#D6FFB7 solid 2px';this.nextElementSibling.style.color = '#3A5A40'"/>
             <label class="form-label" for="loginPassword" id="PasswordLabel">Password</label>
             <span class="input-group-append" id="icon1">
                 <i class="fa-regular fa-eye text-white p-2" onclick="displayPassword()"></i>
